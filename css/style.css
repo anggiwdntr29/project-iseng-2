@@ -24,23 +24,104 @@
 
 .subtitle {
     font-family: 'calibri', sans-serif;
-    font-weight: 400;
-    font-size: 3rem;
-    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: rgb(80, 79, 79);
 }
 
-form {
+.search-container {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin-top: 20px;
     width: 60%;
-    border: 1px solid;
+    border: 1px solid rgb(209, 208, 208);
     border-radius: 8px;
     padding: 4px;
+    transition: .2s;
+}
+
+.search-container:hover {
+    box-shadow: 1px 1px 5px rgb(121, 121, 121);
 }
 
 input {
     width: 100%;
-    height: 20px;
+    padding: 15px;
     margin: 0 10px;
+    outline: none;
+    font-size: 16px;
+}
+
+.logo {
+    padding: 10px;
+}
+
+.btn-search {
+    margin: 22px 0 20px;
+    cursor: pointer;
+    padding: 15px 65px;
+    transition: .2s;
+}
+
+.btn-search:hover {
+    box-shadow: 1px 1px 5px grey;
+}
+
+.result {
+    padding: 10px;
+}
+
+.result h3 {
+    font-size: 30px;
+    background: -webkit-linear-gradient(#6355a4, #5c5968);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gif-hehe {
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.gif-hehe img {
+    margin: 7px;
+    width: 120px;
+    border-radius: 50%;
+}
+
+.text-animation {
+    background: linear-gradient(-45deg, #6355a4, #6355a4, #e89a3e, #e89a3e);
+    background-size: 300%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animated_text 5s ease-in-out infinite;
+    -moz-animation: animated_text 5s ease-in-out infinite;
+    -webkit-animation: animated_text 5s ease-in-out infinite;
+}
+
+.animate__animated.animate__fadeInDown {
+    --animate-duration: 5s;
+}
+
+.animate__animated.animate__fadeIn {
+    --animate-duration: 5s;
+}
+
+@keyframes animated_text {
+    0% {
+        background-position: 0px 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0px 50%;
+    }
 }

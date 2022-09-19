@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,17 +8,28 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>KELAZER | Search Engine</title>
 </head>
+
 <body>
     <div class="container">
-        <h1 class="title">kelaser</h1>
-        <h2 class="subtitle">Bukan sembarang search engine</h2>
-        <form action="" method="post">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text" placeholder="kelaser">
-            <i class="fa-solid fa-microphone"></i>
-        </form>
+        <h1 class="title text-animation">kelazer</h1>
+        <h2 class="subtitle">search engine karya anak bangsad</h2>
+        <div class="search-container">
+            <i class="fa-solid fa-magnifying-glass logo"></i>
+            <input id="searchInput" type="text" placeholder="Cari cuy..">
+            <i class="fa-solid fa-microphone logo"></i>
+        </div>
+        <button id="searchButton" class="btn-search">Search</button>
+
+        <div id="result" class="result"></div>
+
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
